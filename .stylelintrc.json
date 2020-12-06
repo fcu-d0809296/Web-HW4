@@ -1,0 +1,12 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "declaration-block-trailing-semicolon": null
+    },
+    "ignoreFiles": [
+        "*/**/*.jpg",
+        "*/**/*.png",
+        "*/**/*.jpge",
+        "*/**/*.gif"
+    ]
+}
