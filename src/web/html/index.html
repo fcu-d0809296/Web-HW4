@@ -2,14 +2,19 @@
 <html>
   <head>
     <title>溫度轉換</title>
-
-    <script>
-    // write your javascript code here
-    
-    </script>
-
   </head>
 
   <body>
+    <h3 id="ans"></h3>
+    <script>
+    let input = prompt("1 =>攝氏溫度轉換華氏溫度 \n2=>華氏溫度轉換攝氏溫度\n");
+    if(input == 1) {
+      let tm = prompt("請輸入攝氏溫度")
+      document.getElementById("ans").innerHTML = ( "攝氏溫度="+ tm +" => 華氏溫度="+ (5/9*(tm-32)).toFixed(2) )
+    }else if(input == 2) {
+      let tm = prompt("請輸入華氏溫度")
+      document.getElementById("ans").innerHTML = ( "華氏溫度="+ tm +" => 攝氏溫度="+(tm*9/5+32).toFixed(2) )
+    }
+    </script>
   </body>
 </html>
